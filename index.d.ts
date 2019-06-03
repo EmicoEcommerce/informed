@@ -8,7 +8,7 @@ import * as React from 'react'
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 
-declare module 'informed' {
+declare module '@emico/informed' {
   export type FormValue<T = {}> = string | number | boolean | T
   export interface FormValues {
     [key: string]: FormValue
