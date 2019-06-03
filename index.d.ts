@@ -44,6 +44,7 @@ declare module '@emico/informed' {
     getState: () => FormState<V>
     reset: () => void
     setValues: (values: V) => void
+    setFormError: (error: FormError) => void
     validate: () => void
   }
 
